@@ -1,0 +1,6 @@
+Hola [Nombre/Encargado/a], soy [Tu Nombre] de Geoterra.
+Ofrezco un piloto geoespacial gratuito (imágenes NDVI/NDWI + SIG) para apoyar la gestión de riego o áreas verdes en [Comuna].
+Tengo un demo armado con datos reales de su territorio. ¿Agendamos una llamada de 20 minutos esta semana?
+Portafolio: https://geoterra-cl.github.io
+WhatsApp: +56 9 3905 8165
+Correo: geoterra.project@gmail.com
