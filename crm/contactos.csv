@@ -1,0 +1,9 @@
+entidad,comuna,area,nombre,cargo,email,telefono,fuente_url,prioridad,estado,ultimo_contacto,proximo_paso,notas
+Municipalidad de Paine,Paine,SECPLA,María López,Jefa SECPLA,mlópez@paine.cl,+56911112222,https://www.paine.cl,Alta,Contactado,2025-08-25,Agendar demo,Interesada en áreas verdes
+Municipalidad de Buin,Buin,Medio Ambiente,Pedro Ruiz,Encargado Medio Ambiente,pruiz@buin.cl,+56922223333,https://www.buin.cl,Media,Nuevo,,,,
+Municipalidad de Isla de Maipo,Isla de Maipo,PRODESAL,Camila Torres,Coordinadora PRODESAL,ctorres@islademaipo.cl,+56933334444,https://www.islademaipo.cl,Alta,Nuevo,,,,
+Municipalidad de Melipilla,Melipilla,SECPLA,,Secretaría Comunal de Planificación,contacto@melipilla.cl,229027000,https://melipilla.cl,Media,Nuevo,,,No hay nombre, teléfono central
+Municipalidad de Melipilla,Melipilla,Medio Ambiente,,Dirección de Gestión Ambiental,alcaldia@melipilla.cl,229027004,https://melipilla.cl,Media,Nuevo,,,Sin nombre directo, correo alcaldía
+Municipalidad de Talagante,Talagante,SECPLA,,Secretaría Comunal de Planificación,contacto@munitalagante.cl,4512900,https://www.munitalagante.cl/secpla,Media,Nuevo,,,Teléfono central, sin nombre
+Municipalidad de Talagante,Talagante,Medio Ambiente,Pablo Crespo,Oficina de Medio Ambiente,pcrespo@talagante.cl / medioambiente@talagante.cl,233038682,https://www.facebook.com/TalaganteMuni/posts/5446488478806533/,Media,Nuevo,,,Verificado en campaña de calefactores
+JV Río Maipo,RM,Gestión hídrica,,Oficina Central,info@jvriomaipo.cl / juntavigilancia@tie.cl,+56958472245 / +56942804653,https://jvriomaipo.cl/contacto/,Alta,Nuevo,,,WhatsApp y correo directo web oficial
