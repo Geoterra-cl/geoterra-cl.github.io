@@ -5,7 +5,7 @@ Geoterra es una iniciativa para ofrecer soluciones de monitoreo geoespacial y SI
 Este repositorio contiene el sitio de GitHub Pages y las plantillas de contacto para ofrecer pilotos geoespaciales.
 
 ## Estructura
-- `index.md`: página principal con misión/visión, oferta, demos y contacto.
+- `index.html`: página principal con misión/visión, oferta, demos y contacto.
 - `plantillas/`: emails y WhatsApp listos para personalizar (**uso interno, no visible en la web**).
 - `crm/contactos.csv`: base simple para seguimiento de prospectos (**uso interno**).
 - `_config.yml`: configuración de Jekyll (tema, SEO).
