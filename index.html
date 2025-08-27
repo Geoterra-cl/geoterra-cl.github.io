@@ -109,44 +109,89 @@
     </div>
   </div>
 </section>
-			<!-- Demos -->
-			<section class="wrapper style1" id="demos">
-				<div class="container">
-					<header class="major">
-						<h2>Demos (muestras)</h2>
-					</header>
-					<ul>
-						<li>NDVI estacional para áreas verdes en [Comuna] — antes/después</li>
-						<li>NDWI para gestión hídrica en predios agrícolas de [Comuna]</li>
-						<li>Mapa base de suelos/aptitud (referencial) con zonas prioritarias</li>
-					</ul>
-					<p>
-						Encuentra los materiales en <code>assets/demos/</code> o solicita tu demo específico para: Paine, Buin, Isla de Maipo, Melipilla, Talagante, El Monte, Curacaví, Colina, Lampa, Tiltil, Pirque, San José de Maipo.
-					</p>
-				</div>
-			</section>
+<!-- Demos -->
+<section class="wrapper style1" id="demos">
+  <div class="container">
+    <header class="major">
+      <h2>Demos (muestras)</h2>
+    </header>
+    <ul>
+      <li>NDVI estacional para áreas verdes en [Comuna] — antes/después</li>
+      <li>NDWI para gestión hídrica en predios agrícolas de [Comuna]</li>
+      <li>Mapa base de suelos/aptitud (referencial) con zonas prioritarias</li>
+    </ul>
+    <p>
+      ¿Quieres un análisis para tu territorio? <a href="#solicita-analisis" class="button small">Solicita tu análisis aquí</a>
+    </p>
+  </div>
+</section>
 
-			<!-- Planes y precios -->
-			<section class="wrapper style2" id="precios">
-				<div class="container">
-					<header class="major">
-						<h2>Planes y precios</h2>
-					</header>
-					<ul>
-						<li><strong>Básico</strong> (piloto gratuito o $80.000):<br>
-							1 demo + 1 imagen comparativa + llamada 20 min
-						</li>
-						<li><strong>Estándar</strong> ($250.000–$400.000):<br>
-							Informe breve (6–8 págs) + 3 mapas + archivos digitales (GeoTIFF/QGIS)
-						</li>
-						<li><strong>Premium</strong> (&gt;$800.000):<br>
-							Diagnóstico completo, visitas, dashboard y apoyo a postulación
-						</li>
-					</ul>
-					<p>Precios referenciales; ajustables por comuna, área y cobertura.</p>
-				</div>
-			</section>
+<!-- Formulario de solicitud de análisis -->
+<section id="solicita-analisis" class="wrapper style3">
+  <div class="container">
+    <header>
+      <h2>Solicita tu análisis geoespacial</h2>
+      <p>Cuéntanos tu comuna, tipo de predio o área, y qué necesitas analizar. Te responderemos a la brevedad.</p>
+    </header>
+    <form class="solicitud-form" action="mailto:geoterra.project@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-row">
+        <input type="text" name="Nombre" placeholder="Nombre y apellido" required>
+      </div>
+      <div class="form-row">
+        <input type="email" name="Email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-row">
+        <input type="text" name="Comuna" placeholder="Comuna o sector" required>
+      </div>
+      <div class="form-row">
+        <textarea name="Necesidad" rows="3" placeholder="¿Qué necesitas analizar? Cuéntanos brevemente." required></textarea>
+      </div>
+      <div class="form-row">
+        <button type="submit" class="button primary">Enviar solicitud</button>
+      </div>
+    </form>
+  </div>
+</section>
 
+<!-- Planes y precios -->
+<section class="wrapper style2" id="precios">
+  <div class="container">
+    <header class="major">
+      <h2>Planes y precios</h2>
+    </header>
+    <div class="precios-table">
+      <div class="plan">
+        <h3>Básico</h3>
+        <div class="precio">$80.000</div>
+        <ul>
+          <li>1 demo geoespacial</li>
+          <li>1 imagen comparativa</li>
+          <li>Asesoría inicial (llamada 20 min)</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Estándar</h3>
+        <div class="precio">$250.000 – $400.000</div>
+        <ul>
+          <li>Informe breve (6–8 págs)</li>
+          <li>3 mapas personalizados</li>
+          <li>Archivos digitales (GeoTIFF / QGIS)</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <div class="precio">Desde $800.000</div>
+        <ul>
+          <li>Diagnóstico completo</li>
+          <li>Visitas a terreno</li>
+          <li>Dashboard interactivo</li>
+          <li>Apoyo para postulación a fondos</li>
+        </ul>
+      </div>
+    </div>
+    <p class="aclaracion-precios">Valores referenciales; sujetos a comuna, superficie y requerimientos.</p>
+  </div>
+</section>
 			<!-- Principios de trabajo -->
 			<section class="wrapper style1">
 				<div class="container">
@@ -231,4 +276,15 @@
 		<script src="assets/js/main.js"></script>
 
 	</body>
+	<!-- Botones fijos de contacto -->
+<div class="fixed-contact-buttons">
+  <a href="https://wa.me/56939058165?text=Hola%20Geoterra%2C%20quisiera%20agendar%20una%20reuni%C3%B3n%20de%2020%20min"
+     class="fixed-btn whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="mailto:geoterra.project@gmail.com?subject=Consulta%20Geoterra"
+     class="fixed-btn email" aria-label="Correo electrónico">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
 </html>
