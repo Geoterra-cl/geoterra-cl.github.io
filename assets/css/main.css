@@ -3697,3 +3697,54 @@ input, select, textarea {
     font-size: 0.97em;
   }
 }
+/* ==== Fix solapamiento banner Geoterra ==== */
+#banner {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  box-sizing: border-box;
+  background: inherit;
+}
+#banner header {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: none;
+  z-index: 2;
+  position: relative;
+  padding: 0 1em;
+}
+#banner h2 {
+  margin-bottom: 1.1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.16);
+}
+#banner p {
+  font-size: 1.1em;
+  color: #e8e8e8;
+  margin-bottom: 0;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.16);
+}
+@media (max-width: 700px) {
+  #banner {
+    min-height: 180px;
+    padding-top: 1.3em;
+    padding-bottom: 1.6em;
+  }
+  #banner header {
+    padding: 0 0.3em;
+  }
+  #banner h2 {
+    font-size: 1em;
+  }
+  #banner p {
+    font-size: 0.94em;
+  }
+}
