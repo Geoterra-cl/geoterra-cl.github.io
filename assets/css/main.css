@@ -3647,3 +3647,53 @@ input, select, textarea {
     max-width: 97vw;
   }
 }
+
+/* ==== Fix solapamiento banner ==== */
+#banner {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+#banner header {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  background: none;
+  padding: 0 1.5em;
+}
+#banner h2 {
+  margin-bottom: 1.2em;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+#banner p {
+  margin-bottom: 0;
+  font-size: 1.15em;
+  font-weight: 400;
+  color: #f8f8f8;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.17);
+}
+@media (max-width: 700px) {
+  #banner {
+    min-height: 200px;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+  }
+  #banner header {
+    padding: 0 0.5em;
+  }
+  #banner h2 {
+    font-size: 1.1em;
+  }
+  #banner p {
+    font-size: 0.97em;
+  }
+}
