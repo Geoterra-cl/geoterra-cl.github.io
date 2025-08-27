@@ -3458,3 +3458,192 @@ input, select, textarea {
     padding: 1.2em 1em;
   }
 }
+/* --- Botones fijos de contacto --- */
+.fixed-contact-buttons {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 99;
+}
+
+.fixed-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #fff;
+  color: #22C35A;
+  box-shadow: 0 4px 18px rgba(30,80,40,0.18);
+  font-size: 2.7em;
+  border: none;
+  transition: transform 0.18s, box-shadow 0.22s;
+  text-decoration: none;
+}
+
+.fixed-btn.whatsapp {
+  color: #25D366;
+  border: 2.5px solid #25D366;
+}
+.fixed-btn.email {
+  color: #0099cc;
+  border: 2.5px solid #0099cc;
+}
+
+.fixed-btn:hover, .fixed-btn:focus {
+  transform: scale(1.12);
+  box-shadow: 0 8px 32px rgba(50,200,80,0.19);
+}
+
+@media (max-width: 600px) {
+  .fixed-contact-buttons {
+    right: 14px;
+    bottom: 14px;
+    gap: 10px;
+  }
+  .fixed-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.55em;
+  }
+}
+#banner header {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2.2em;
+}
+
+#banner h2, #banner p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  background: none;
+}
+/* --- Planes y precios tabla --- */
+.precios-table {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.plan {
+  background: #fff;
+  border-radius: 1.2em;
+  box-shadow: 0 4px 20px rgba(30,90,60,0.09);
+  min-width: 220px;
+  max-width: 330px;
+  padding: 1.5em 1.2em 1.3em 1.2em;
+  margin-bottom: 1em;
+}
+.plan h3 {
+  color: #0099cc;
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+.plan .precio {
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+  color: #25D366;
+}
+.plan ul {
+  padding-left: 1em;
+  margin: 0;
+}
+.plan li {
+  margin-bottom: 0.6em;
+  color: #334;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.aclaracion-precios {
+  font-size: 0.97em;
+  color: #888;
+  text-align: center;
+  margin-top: 0.8em;
+}
+@media (max-width: 900px) {
+  .precios-table {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1em;
+  }
+}
+/* --- Formulario de solicitud --- */
+.solicitud-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+  background: #fff;
+  border-radius: 1em;
+  box-shadow: 0 2px 14px rgba(0,80,80,0.07);
+}
+
+.solicitud-form .form-row {
+  margin-bottom: 1.1em;
+}
+.solicitud-form input, .solicitud-form textarea {
+  width: 100%;
+  border: 1.6px solid #ccd;
+  border-radius: 7px;
+  padding: 0.85em 0.9em;
+  font-size: 1em;
+  color: #203033;
+  background: #f7fafc;
+  transition: border 0.2s;
+}
+.solicitud-form input:focus, .solicitud-form textarea:focus {
+  border: 1.6px solid #25D366;
+  outline: none;
+  background: #fff;
+}
+.solicitud-form button {
+  width: 100%;
+  padding: 0.8em 0;
+  font-size: 1.08em;
+  background: #25D366;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.18s, transform 0.15s;
+}
+.solicitud-form button:hover {
+  background: #1da851;
+  transform: scale(1.03);
+}
+#banner header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 1em 3em 1em; /* más espacio arriba y abajo */
+}
+
+#banner h2, #banner p {
+  text-align: center;
+  max-width: 900px;
+  background: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2em;
+}
+
+@media (max-width: 600px) {
+  #banner header {
+    padding: 2.3em 0.5em 2.3em 0.5em;
+  }
+  #banner h2, #banner p {
+    font-size: 1em;
+    max-width: 97vw;
+  }
+}
