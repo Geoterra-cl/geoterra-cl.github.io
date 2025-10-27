@@ -4149,3 +4149,75 @@ input, select, textarea {
   visibility: visible !important;
   opacity: 1 !important;
 }
+/* ===== Ajuste: logo a la izquierda y texto legible ===== */
+/* Pegar al final de main.css para sobreescribir reglas anteriores */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo a la izquierda, nav a la derecha */
+  padding: 10px 3rem; /* ajusta el relleno horizontal según diseño */
+  background: transparent; /* si tu header tiene background, mantén o elimina */
+  z-index: 9999;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Logo: mantenerlo alineado a la izquierda */
+#logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start; /* important: colocarlo a la izquierda */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagen del logo: tamaño controlado */
+.logo-img {
+  height: 40px; /* escritorio */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Texto del logo: tamaño y fuente más grande y legible */
+.logo-text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.25rem; /* + tamaño para que no quede "enana" */
+  font-weight: 700;
+  color: #003300; /* oscuro sobre fondos claros; usa #fff si el header es oscuro */
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Asegurar que el nav ocupe su lugar a la derecha */
+#nav {
+  margin-left: auto; /* empuja el nav hacia la derecha */
+}
+
+/* Mobile: reducir logo y texto, mantener la alineación */
+@media (max-width: 768px) {
+  #header {
+    padding: 8px 1rem;
+  }
+  .logo-img {
+    height: 32px;
+  }
+  .logo-text {
+    font-size: 1.05rem;
+  }
+
+  /* Si tu diseño colapsa el nav en móvil (hamburger), asegúrate que siga debajo / a la derecha */
+  /* si usas un menú colapsable, no es necesario cambiarlo aquí */
+}
+
+/* En caso de reglas antiguas que estén centrando el logo, forzamos flex-start */
+#logo, #logo * {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
