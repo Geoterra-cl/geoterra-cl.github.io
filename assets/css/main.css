@@ -3952,15 +3952,15 @@ input, select, textarea {
 }
 
 /* Media query para pantallas móviles */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   #logo {
     font-size: 1.2em;
-    justify-content: flex-start; /* opcional: centrado o alineación izquierda según tu layout */
+    justify-content: flex-start; /* opcional: centrado o alineación izquierda según tu layout
   }
   .logo-img {
     height: 32px;
   }
-}
+}*/
 
 /* 4) Botones de contacto fijos (si necesitas ajustes visuales) */
 .fixed-contact-buttons {
