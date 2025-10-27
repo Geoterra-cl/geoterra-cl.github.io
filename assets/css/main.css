@@ -3888,4 +3888,125 @@ input, select, textarea {
     height: 32px;
   }
 }
+/* --- (aquí tu CSS existente) --- */
 
+/* ========================= */
+/* Reglas añadidas al final */
+/* ========================= */
+
+/* 1) Texto del párrafo en "Solicita análisis" en blanco */
+#solicita-analisis p {
+  color: #ffffff;
+  /* si el fondo es oscuro, asegurar buena legibilidad */
+  text-shadow: none;
+}
+
+/* 2) Sección de contacto: texto y enlaces */
+#contacto,
+#contacto .inner {
+  /* mantener la coherencia del contenedor si se requiere */
+}
+
+#contacto p {
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Enlaces blancos por defecto y verde claro al hover */
+#contacto a {
+  color: #ffffff;
+  text-decoration: none; /* o underline si prefieres */
+  transition: color 150ms ease-in-out;
+}
+
+#contacto a:hover,
+#contacto a:focus {
+  color: #9ef39e;
+  outline: none;
+  text-decoration: none;
+}
+
+/* 3) Logo y texto Geoterra: alineación con flex y tamaño adaptable */
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  gap: 8px; /* espacio entre imagen y texto */
+  text-decoration: none;
+}
+
+/* Ajuste de la imagen del logo */
+.logo-img {
+  height: 40px; /* tamaño para escritorio */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Hacer que el texto del logo no sea demasiado grande en móviles */
+#logo {
+  font-weight: 700;
+  font-size: 1.0rem;
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+  #logo {
+    font-size: 1.2em;
+    justify-content: flex-start; /* opcional: centrado o alineación izquierda según tu layout */
+  }
+  .logo-img {
+    height: 32px;
+  }
+}
+
+/* 4) Botones de contacto fijos (si necesitas ajustes visuales) */
+.fixed-contact-buttons {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.fixed-contact-buttons .fixed-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 120ms ease, background-color 120ms ease;
+  background: rgba(0,0,0,0.6);
+}
+
+.fixed-contact-buttons .fixed-btn.whatsapp {
+  background: #25D366; /* verde WhatsApp */
+}
+
+.fixed-contact-buttons .fixed-btn.email {
+  background: #3b82f6; /* color azul para email, opcional */
+}
+
+.fixed-contact-buttons .fixed-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+/* Asegurar tamaño de iconos dentro de botones */
+.fixed-contact-buttons .fixed-btn i {
+  font-size: 20px;
+}
+
+/* Accesibilidad: focus visible */
+.fixed-contact-buttons .fixed-btn:focus {
+  outline: 3px solid rgba(158,243,158,0.3);
+  outline-offset: 3px;
+}
