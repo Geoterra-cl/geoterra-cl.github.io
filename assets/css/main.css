@@ -4094,13 +4094,15 @@ input, select, textarea {
     font-size: 1.05rem;
   }
 }
-/* ===== Logo: toda la palabra con tamaño y estilo 'T' grande ===== */
+/* ==== Logo: toda la palabra GeoTerra con el mismo tamaño/estilo (sin trato especial a la 'T') ==== */
+
+/* Estilo base del texto del logo */
 .logo-text {
   display: inline-block;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.9rem;      /* tamaño principal: igual que la T grande */
-  font-weight: 900;       /* fuerte como la T */
-  color: #003300;         /* ajusta a #fff si necesitas blanco sobre fondo oscuro */
+  font-size: 1.9rem;     /* tamaño único para toda la palabra; ajusta si lo quieres mayor/menor */
+  font-weight: 900;      /* peso del texto (fuerte) */
+  color: #003300;        /* color del texto */
   line-height: 1;
   letter-spacing: 0;
   white-space: nowrap;
@@ -4109,22 +4111,22 @@ input, select, textarea {
   padding: 0;
 }
 
-/* La propia 'T' puede quedar ligeramente más grande si quieres (opcional) */
+/* Aseguramos que la 'T' no tenga un tamaño distinto; sólo aplicamos mayúscula si quieres */
 .logo-text .logo-T {
-  font-size: 2.1rem;      /* un poco mayor para énfasis; baja si queda muy grande */
-  font-weight: 900;
-  vertical-align: baseline;
+  font-size: inherit;    /* igual que el resto del texto */
+  font-weight: inherit;  /* igual que el resto */
+  text-transform: uppercase; /* opcional: deja la T en mayúscula sin cambiar tamaño */
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
+  vertical-align: baseline;
 }
 
-/* Ajustes en móvil */
+/* Responsivo: reducir todo proporcionalmente en móvil */
 @media (max-width: 768px) {
   .logo-text {
-    font-size: 1.25rem;   /* reduce el tamaño en móvil */
+    font-size: 1.25rem;  /* ajustar para móviles */
   }
   .logo-text .logo-T {
-    font-size: 1.4rem;
+    font-size: inherit;
   }
 }
