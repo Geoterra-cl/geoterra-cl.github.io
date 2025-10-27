@@ -4010,3 +4010,35 @@ input, select, textarea {
   outline: 3px solid rgba(158,243,158,0.3);
   outline-offset: 3px;
 }
+/* ========================= */
+/* Ajustes para botón "Agendar reunión técnica" en #contacto */
+/* Pegar estas reglas al final de main.css */
+/* ========================= */
+
+#contacto .button {
+  color: #7fd3ff; /* texto celeste por defecto */
+  background: transparent; /* fondo transparente para integrarse con el layout */
+  border: 1px solid rgba(127, 211, 255, 0.28); /* borde sutil celeste */
+  padding: 0.65em 1.1em;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 150ms ease, color 150ms ease, transform 120ms ease, box-shadow 120ms ease;
+  cursor: pointer;
+}
+
+/* Hover / focus: coherente con el hover de enlaces (verde claro) */
+#contacto .button:hover,
+#contacto .button:focus {
+  background-color: #9ef39e; /* verde claro al pasar el cursor */
+  color: #003300; /* texto oscuro para buen contraste sobre el verde */
+  transform: translateY(-2px);
+  outline: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Focus visible (accesibilidad) */
+#contacto .button:focus-visible {
+  box-shadow: 0 0 0 4px rgba(158,243,158,0.25);
+}
