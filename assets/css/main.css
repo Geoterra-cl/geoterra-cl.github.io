@@ -3748,3 +3748,71 @@ input, select, textarea {
     font-size: 0.94em;
   }
 }
+/* === Banner consolidado para Geoterra (pegar al final de main.css) ===
+   Si la imagen está en assets/css/images/ -> url("images/shurbland_fj.jpg")
+   Si la imagen está en assets/images/     -> url("../images/shurbland_fj.jpg")
+*/
+#banner {
+  background-image: url("images/shurbland_fj.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 4em 1em;
+  box-sizing: border-box;
+  background-color: #21423a;
+}
+
+/* overlay para legibilidad */
+#banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* contenido por encima del overlay */
+#banner header {
+  position: relative;
+  z-index: 2;
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: none;
+  padding: 0 1.5em;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+#banner h2 {
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  line-height: 1.18;
+}
+
+#banner p {
+  margin: 0;
+  font-size: 1.05em;
+  color: #eaeaea;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  #banner { padding: 2.6em 0.8em; min-height: 220px; }
+  #banner h2 { font-size: 1.15em; }
+  #banner p { font-size: 0.98em; }
+}
