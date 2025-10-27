@@ -4042,3 +4042,55 @@ input, select, textarea {
 #contacto .button:focus-visible {
   box-shadow: 0 0 0 4px rgba(158,243,158,0.25);
 }
+/* ===== Estilo: título tipo "antiguo" solo con 'Geoterra' + logo ===== */
+#header {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* H1 / logo */
+#header h1 {
+  margin: 0;
+  padding: 12px 3rem; /* ajusta si tu diseño original tenía distinto padding */
+  line-height: 1;
+}
+
+/* Enlace del logo: imagen + texto */
+#logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  justify-content: flex-start;
+  color: inherit;
+}
+
+/* Imagen del logo: mantiene la imagen */
+.logo-img {
+  height: 40px; /* escritorio */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Texto del logo: apariencia grande y legible similar al antiguo título */
+.logo-text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4rem; /* tamaño grande, similar al título antiguo */
+  font-weight: 700;
+  color: #003300; /* oscuro sobre panel claro; si tu header está sobre imagen, puedes poner #fff */
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Ajustes móviles */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 32px;
+  }
+  .logo-text {
+    font-size: 1.05rem;
+  }
+}
