@@ -4094,29 +4094,37 @@ input, select, textarea {
     font-size: 1.05rem;
   }
 }
-/* ===== Ajuste: hacer la "T" mayúscula y más grande ===== */
+/* ===== Logo: toda la palabra con tamaño y estilo 'T' grande ===== */
 .logo-text {
+  display: inline-block;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.4rem; /* tamaño base para el texto del logo */
-  font-weight: 700;
-  color: #003300;
+  font-size: 1.9rem;      /* tamaño principal: igual que la T grande */
+  font-weight: 900;       /* fuerte como la T */
+  color: #003300;         /* ajusta a #fff si necesitas blanco sobre fondo oscuro */
   line-height: 1;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.logo-text .logo-T {
-  font-size: 1.9rem;   /* más grande que el resto del texto */
-  font-weight: 900;    /* opcional: más énfasis */
-  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
   vertical-align: middle;
-  margin: 0 2px;
-  text-transform: uppercase; /* asegura que sea mayúscula */
+  margin: 0;
+  padding: 0;
 }
 
-/* Ajuste en móvil: reducir la "T" para que no rompa el layout */
+/* La propia 'T' puede quedar ligeramente más grande si quieres (opcional) */
+.logo-text .logo-T {
+  font-size: 2.1rem;      /* un poco mayor para énfasis; baja si queda muy grande */
+  font-weight: 900;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* Ajustes en móvil */
 @media (max-width: 768px) {
-  .logo-text { font-size: 1.05rem; }
-  .logo-text .logo-T { font-size: 1.3rem; }
+  .logo-text {
+    font-size: 1.25rem;   /* reduce el tamaño en móvil */
+  }
+  .logo-text .logo-T {
+    font-size: 1.4rem;
+  }
 }
