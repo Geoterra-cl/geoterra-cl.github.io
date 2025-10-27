@@ -173,173 +173,168 @@
 </html>
 
 			<!-- Demos -->
-			<section class="wrapper style1" id="demos">
-			  <div class="container">
-			    <header class="major">
-			      <h2>Demos (muestras)</h2>
-			    </header>
-			    <ul>
-			      <li>NDVI estacional para áreas verdes en [Comuna] — antes/después</li>
-			      <li>NDWI para gestión hídrica en predios agrícolas de [Comuna]</li>
-			      <li>Mapa base de suelos/aptitud (referencial) con zonas prioritarias</li>
-			    </ul>
-			    <p>
-			      ¿Quieres un análisis para tu territorio? <a href="#solicita-analisis" class="button small">Solicita tu análisis aquí</a>
-			    </p>
-			  </div>
-			</section>
+<section class="wrapper style1" id="demos">
+  <div class="container">
+    <header class="major">
+      <h2>Demos geoespaciales</h2>
+      <p>Ejemplos de análisis y visualizaciones que realizamos en proyectos territoriales y ambientales.</p>
+    </header>
+    <ul>
+      <li><strong>Monitoreo NDVI estacional</strong> — evaluación de vigor vegetal antes y después de intervenciones.</li>
+      <li><strong>Mapa NDWI</strong> — seguimiento del estrés hídrico y eficiencia de riego en zonas agrícolas.</li>
+      <li><strong>Modelo digital de terreno</strong> — análisis de pendiente y erosión potencial para planificación predial.</li>
+      <li><strong>Mapa de carbono y cobertura</strong> — estimación de stock de carbono en suelos y biomasa.</li>
+      <li><strong>Zonificación de riesgo</strong> — identificación de áreas críticas por degradación o incendio.</li>
+    </ul>
+    <p>
+      ¿Quieres ver un ejemplo aplicado a tu territorio? 
+      <a href="#solicita-analisis" class="button small">Solicita tu demo personalizada</a>
+    </p>
+  </div>
+</section>
 
-			<!-- Formulario de solicitud de análisis -->
-			<section id="solicita-analisis" class="wrapper style3">
-			  <div class="container">
-			    <header>
-			      <h2>Solicita tu análisis geoespacial</h2>
-			      <p>Cuéntanos tu comuna, tipo de predio o área, y qué necesitas analizar. Te responderemos a la brevedad.</p>
-			    </header>
-			    <form class="solicitud-form" action="mailto:geoterra.project@gmail.com" method="POST" enctype="text/plain">
-			      <div class="form-row">
-			        <input type="text" name="Nombre" placeholder="Nombre y apellido" required>
-			      </div>
-			      <div class="form-row">
-			        <input type="email" name="Email" placeholder="Correo electrónico" required>
-			      </div>
-			      <div class="form-row">
-			        <input type="text" name="Comuna" placeholder="Comuna o sector" required>
-			      </div>
-			      <div class="form-row">
-			        <textarea name="Necesidad" rows="3" placeholder="¿Qué necesitas analizar? Cuéntanos brevemente." required></textarea>
-			      </div>
-			      <div class="form-row">
-			        <button type="submit" class="button primary">Enviar solicitud</button>
-			      </div>
-			    </form>
-			  </div>
-			</section>
+<!-- Formulario de solicitud de análisis -->
+<section id="solicita-analisis" class="wrapper style3">
+  <div class="container">
+    <header>
+      <h2>Solicita tu análisis geoespacial</h2>
+      <p>Completa el siguiente formulario y te enviaremos una propuesta adaptada a tu comuna o predio.</p>
+    </header>
+    <!-- Usamos Formspree para enviar el formulario sin servidor -->
+    <form class="solicitud-form" action="https://formspree.io/f/xjkgzvwp" method="POST">
+      <div class="form-row">
+        <input type="text" name="Nombre" placeholder="Nombre y apellido" required>
+      </div>
+      <div class="form-row">
+        <input type="email" name="Email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-row">
+        <input type="text" name="Comuna" placeholder="Comuna o sector" required>
+      </div>
+      <div class="form-row">
+        <textarea name="Necesidad" rows="3" placeholder="Describe brevemente qué análisis necesitas (ej. vegetación, agua, suelo, carbono...)" required></textarea>
+      </div>
+      <div class="form-row">
+        <button type="submit" class="button primary">Enviar solicitud</button>
+      </div>
+    </form>
+  </div>
+</section>
 
-			<!-- Planes y precios -->
-			<section class="wrapper style2" id="precios">
-			  <div class="container">
-			    <header class="major">
-			      <h2>Planes y precios</h2>
-			    </header>
-			    <div class="precios-table">
-			      <div class="plan">
-			        <h3>Básico</h3>
-			        <div class="precio">$80.000</div>
-			        <ul>
-			          <li>1 demo geoespacial</li>
-			          <li>1 imagen comparativa</li>
-			          <li>Asesoría inicial (llamada 20 min)</li>
-			        </ul>
-			      </div>
-			      <div class="plan">
-			        <h3>Estándar</h3>
-			        <div class="precio">$250.000 – $400.000</div>
-			        <ul>
-			          <li>Informe breve (6–8 págs)</li>
-			          <li>3 mapas personalizados</li>
-			          <li>Archivos digitales (GeoTIFF / QGIS)</li>
-			        </ul>
-			      </div>
-			      <div class="plan">
-			        <h3>Premium</h3>
-			        <div class="precio">Desde $800.000</div>
-			        <ul>
-			          <li>Diagnóstico completo</li>
-			          <li>Visitas a terreno</li>
-			          <li>Dashboard interactivo</li>
-			          <li>Apoyo para postulación a fondos</li>
-			        </ul>
-			      </div>
-			    </div>
-			    <p class="aclaracion-precios">Valores referenciales; sujetos a comuna, superficie y requerimientos.</p>
-			  </div>
-			</section>
+<!-- Planes y precios -->
+<section class="wrapper style2" id="precios">
+  <div class="container">
+    <header class="major">
+      <h2>Planes y precios referenciales</h2>
+      <p>Los valores pueden variar según superficie, comuna y nivel de detalle requerido.</p>
+    </header>
+    <div class="precios-table">
+      <div class="plan">
+        <h3>Básico</h3>
+        <div class="precio">$90.000</div>
+        <ul>
+          <li>1 mapa geoespacial (NDVI o NDWI)</li>
+          <li>Informe breve con interpretación</li>
+          <li>Asesoría inicial (videollamada 20 min)</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Estándar</h3>
+        <div class="precio">$280.000 – $420.000</div>
+        <ul>
+          <li>Informe técnico (6–10 págs)</li>
+          <li>3 mapas georreferenciados personalizados</li>
+          <li>Archivos digitales (GeoTIFF / QGIS / PDF)</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Avanzado</h3>
+        <div class="precio">Desde $750.000</div>
+        <ul>
+          <li>Diagnóstico completo territorial</li>
+          <li>Visitas a terreno y verificación</li>
+          <li>Dashboard interactivo y reporte ejecutivo</li>
+          <li>Apoyo para postulación a fondos o certificación ambiental</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-			<!-- Principios de trabajo -->
-			<section class="wrapper style1">
-				<div class="container">
-					<header class="major">
-						<h2>Principios de trabajo</h2>
-					</header>
-					<ul>
-						<li>Datos abiertos y ciencia aplicada abierta</li>
-						<li>Reproducibilidad (procesos documentados)</li>
-						<li>Enfoque territorial y validación en terreno cuando aplique</li>
-						<li>Claridad y utilidad para la toma de decisiones</li>
-					</ul>
-				</div>
-			</section>
+<!-- Principios de trabajo -->
+<section class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h2>Nuestros principios de trabajo</h2>
+    </header>
+    <ul>
+      <li><strong>Datos abiertos y trazabilidad:</strong> usamos fuentes verificables (Copernicus, NASA, IDE Chile) con respaldo técnico.</li>
+      <li><strong>Ciencia aplicada:</strong> priorizamos resultados prácticos para la toma de decisiones reales.</li>
+      <li><strong>Reproducibilidad:</strong> cada análisis incluye metadatos, metodología y acceso a scripts o repositorios.</li>
+      <li><strong>Compromiso territorial:</strong> combinamos teledetección, conocimiento local y validación en terreno.</li>
+      <li><strong>Claridad y transparencia:</strong> entregamos productos comprensibles, auditables y listos para gestión.</li>
+    </ul>
+  </div>
+</section>
 
-			<!-- Contacto -->
-			<section id="contacto" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Contacto</h2>
-						<p>
-							WhatsApp: <a href="https://wa.me/56939058165">+56 9 3905 8165</a><br>
-							Correo: <a href="mailto:geoterra.project@gmail.com">geoterra.project@gmail.com</a><br>
-							GitHub: <a href="https://github.com/Geoterra-cl">Geoterra-cl</a>
-						</p>
-						<a href="mailto:geoterra.project@gmail.com?subject=Agendar%20reuni%C3%B3n%20de%2020%20min" class="button">Agendar 20 min por videollamada</a>
-					</header>
-				</div>
-			</section>
+<!-- Contacto -->
+<section id="contacto" class="wrapper style3">
+  <div class="container">
+    <header>
+      <h2>Contacto</h2>
+      <p>
+        WhatsApp: <a href="https://wa.me/56939058165" target="_blank">+56 9 3905 8165</a><br>
+        Correo: <a href="mailto:contacto@geoterra.cl">contacto@geoterra.cl</a><br>
+        GitHub: <a href="https://github.com/Geoterra-cl" target="_blank">Geoterra-cl</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/company/geoterra-cl" target="_blank">Geoterra</a>
+      </p>
+      <a href="https://calendly.com/geoterra-cl/20min" target="_blank" class="button">Agendar reunión de 20 min</a>
+    </header>
+  </div>
+</section>
 
-			<!-- Nota técnica -->
-			<section class="wrapper style2">
-				<div class="container">
-					<header class="major">
-						<h2>Nota técnica</h2>
-					</header>
-					<p>
-					  Datos satelitales de acceso abierto (Copernicus/NASA). Resoluciones y fechas se informan en cada entregable. Los resultados son indicativos y deben validarse en terreno cuando aplique.
-					</p>
-				</div>
-			</section>
+<!-- Nota técnica -->
+<section class="wrapper style2">
+  <div class="container">
+    <header class="major">
+      <h2>Nota técnica</h2>
+    </header>
+    <p>
+      Los análisis utilizan imágenes satelitales de acceso abierto (Copernicus, NASA, USGS). 
+      Las fechas, sensores y resoluciones se detallan en cada entrega. 
+      Los resultados son orientativos y deben complementarse con verificación en terreno cuando corresponda.
+    </p>
+  </div>
+</section>
 
-			<!-- Footer -->
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<section class="col-6 col-12-narrower">
-							<h3>Enlaces útiles</h3>
-							<ul class="links">
-								<li><a href="#soluciones">Soluciones</a></li>
-								<li><a href="#demos">Demos</a></li>
-								<li><a href="#precios">Precios</a></li>
-								<li><a href="#contacto">Contacto</a></li>
-							</ul>
-						</section>
-						<section class="col-6 col-12-narrower">
-							<h3>Redes y contacto</h3>
-							<ul class="icons">
-								<li><a href="https://twitter.com/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://facebook.com/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/Geoterra-cl" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://linkedin.com/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-						</section>
-					</div>
-				</div>
-				<div class="copyright">
-					<ul class="menu">
-						<li>&copy; Geoterra. Todos los derechos reservados.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</div>
-
-
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<!-- Footer -->
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <section class="col-6 col-12-narrower">
+        <h3>Enlaces útiles</h3>
+        <ul class="links">
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#demos">Demos</a></li>
+          <li><a href="#precios">Planes y precios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </section>
+      <section class="col-6 col-12-narrower">
+        <h3>Redes y comunidad</h3>
+        <ul class="icons">
+          <li><a href="https://x.com/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://facebook.com/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="https://github.com/Geoterra-cl" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href="https://linkedin.com/company/geoterra-cl" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <div class="copyright">
+    <ul class="menu">
+      <li>&copy; 2025 Geoterra. Todos los derechos reservados.</li>
+      <li>Diseño base: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </div>
+</div>
