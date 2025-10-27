@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Monitoreo geoespacial para manejo integrado de suelos, recursos hídricos, áreas verdes, comunidades y planificación territorial." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Font Awesome para los iconos de los botones fijos -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-jQf6m0q3Qf1k6zY1y6Y9g8+G7G8d9x3sZ5q3nQ0Xo5h3b0l6k9u9v2yZpQZt6f1Kqf9sX6D9wK6w9Zx0q5D1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -30,14 +32,15 @@
 				</nav>
 			</div>
 
-<section id="banner">
-  <header>
-    <h2>Soluciones geoespaciales para gestionar suelo, agua y áreas verdes con eficiencia y participación</h2>
-    <p>
-      Apoyamos a municipalidades, PRODESAL/INDAP, cooperativas y ONG con análisis satelital y SIG listo para decidir: riego, vigor, líneas base e inversión territorial.
-    </p>
-  </header>
-</section>
+			<!-- Banner: ahora usa imagen de fondo + overlay -->
+			<section id="banner" class="banner-image">
+			  <header>
+			    <h2>Soluciones geoespaciales para gestionar suelo, agua y áreas verdes con eficiencia y participación</h2>
+			    <p>
+			      Apoyamos a municipalidades, PRODESAL/INDAP, cooperativas y ONG con análisis satelital y SIG listo para decidir: riego, vigor, líneas base e inversión territorial.
+			    </p>
+			  </header>
+			</section>
 
 			<!-- Misión y Visión -->
 			<section class="wrapper style1">
@@ -52,131 +55,133 @@
 			</section>
 
 			<!-- Soluciones -->
-<section class="wrapper style2" id="soluciones">
-  <div class="container">
-    <header class="major">
-      <h2>Soluciones</h2>
-    </header>
-    <div class="soluciones-grid">
-      <div class="solucion-card">
-        <h3>Gestión hídrica y riego eficiente</h3>
-        <ul>
-          <li>NDVI/NDWI para vigor y estrés hídrico</li>
-          <li>Alertas y priorización de riego</li>
-        </ul>
-      </div>
-      <div class="solucion-card">
-        <h3>Áreas verdes y medio ambiente municipal</h3>
-        <ul>
-          <li>Monitoreo de salud de cobertura, arbolado y parques</li>
-          <li>Identificación de zonas críticas y priorización de mantención</li>
-        </ul>
-      </div>
-      <div class="solucion-card">
-        <h3>Líneas base y SECPLA</h3>
-        <ul>
-          <li>Insumos técnicos para proyectos, postulaciones y evaluación de impacto</li>
-          <li>Mapas de uso/aptitud de suelo y zonificación de apoyo</li>
-        </ul>
-      </div>
-      <div class="solucion-card">
-        <h3>Participación y mapas comunitarios</h3>
-        <ul>
-          <li>Cartografía participativa y reportes claros para juntas de vecinos/ONG</li>
-        </ul>
-      </div>
-      <div class="solucion-card">
-        <h3>Ciencia abierta y reproducibilidad</h3>
-        <ul>
-          <li>Entregables trazables (scripts/notebooks opcionales) y datos abiertos</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Demos -->
-<section class="wrapper style1" id="demos">
-  <div class="container">
-    <header class="major">
-      <h2>Demos (muestras)</h2>
-    </header>
-    <ul>
-      <li>NDVI estacional para áreas verdes en [Comuna] — antes/después</li>
-      <li>NDWI para gestión hídrica en predios agrícolas de [Comuna]</li>
-      <li>Mapa base de suelos/aptitud (referencial) con zonas prioritarias</li>
-    </ul>
-    <p>
-      ¿Quieres un análisis para tu territorio? <a href="#solicita-analisis" class="button small">Solicita tu análisis aquí</a>
-    </p>
-  </div>
-</section>
+			<section class="wrapper style2" id="soluciones">
+			  <div class="container">
+			    <header class="major">
+			      <h2>Soluciones</h2>
+			    </header>
+			    <div class="soluciones-grid">
+			      <div class="solucion-card">
+			        <h3>Gestión hídrica y riego eficiente</h3>
+			        <ul>
+			          <li>NDVI/NDWI para vigor y estrés hídrico</li>
+			          <li>Alertas y priorización de riego</li>
+			        </ul>
+			      </div>
+			      <div class="solucion-card">
+			        <h3>Áreas verdes y medio ambiente municipal</h3>
+			        <ul>
+			          <li>Monitoreo de salud de cobertura, arbolado y parques</li>
+			          <li>Identificación de zonas críticas y priorización de mantención</li>
+			        </ul>
+			      </div>
+			      <div class="solucion-card">
+			        <h3>Líneas base y SECPLA</h3>
+			        <ul>
+			          <li>Insumos técnicos para proyectos, postulaciones y evaluación de impacto</li>
+			          <li>Mapas de uso/aptitud de suelo y zonificación de apoyo</li>
+			        </ul>
+			      </div>
+			      <div class="solucion-card">
+			        <h3>Participación y mapas comunitarios</h3>
+			        <ul>
+			          <li>Cartografía participativa y reportes claros para juntas de vecinos/ONG</li>
+			        </ul>
+			      </div>
+			      <div class="solucion-card">
+			        <h3>Ciencia abierta y reproducibilidad</h3>
+			        <ul>
+			          <li>Entregables trazables (scripts/notebooks opcionales) y datos abiertos</li>
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+			</section>
 
-<!-- Formulario de solicitud de análisis -->
-<section id="solicita-analisis" class="wrapper style3">
-  <div class="container">
-    <header>
-      <h2>Solicita tu análisis geoespacial</h2>
-      <p>Cuéntanos tu comuna, tipo de predio o área, y qué necesitas analizar. Te responderemos a la brevedad.</p>
-    </header>
-    <form class="solicitud-form" action="mailto:geoterra.project@gmail.com" method="POST" enctype="text/plain">
-      <div class="form-row">
-        <input type="text" name="Nombre" placeholder="Nombre y apellido" required>
-      </div>
-      <div class="form-row">
-        <input type="email" name="Email" placeholder="Correo electrónico" required>
-      </div>
-      <div class="form-row">
-        <input type="text" name="Comuna" placeholder="Comuna o sector" required>
-      </div>
-      <div class="form-row">
-        <textarea name="Necesidad" rows="3" placeholder="¿Qué necesitas analizar? Cuéntanos brevemente." required></textarea>
-      </div>
-      <div class="form-row">
-        <button type="submit" class="button primary">Enviar solicitud</button>
-      </div>
-    </form>
-  </div>
-</section>
+			<!-- Demos -->
+			<section class="wrapper style1" id="demos">
+			  <div class="container">
+			    <header class="major">
+			      <h2>Demos (muestras)</h2>
+			    </header>
+			    <ul>
+			      <li>NDVI estacional para áreas verdes en [Comuna] — antes/después</li>
+			      <li>NDWI para gestión hídrica en predios agrícolas de [Comuna]</li>
+			      <li>Mapa base de suelos/aptitud (referencial) con zonas prioritarias</li>
+			    </ul>
+			    <p>
+			      ¿Quieres un análisis para tu territorio? <a href="#solicita-analisis" class="button small">Solicita tu análisis aquí</a>
+			    </p>
+			  </div>
+			</section>
 
-<!-- Planes y precios -->
-<section class="wrapper style2" id="precios">
-  <div class="container">
-    <header class="major">
-      <h2>Planes y precios</h2>
-    </header>
-    <div class="precios-table">
-      <div class="plan">
-        <h3>Básico</h3>
-        <div class="precio">$80.000</div>
-        <ul>
-          <li>1 demo geoespacial</li>
-          <li>1 imagen comparativa</li>
-          <li>Asesoría inicial (llamada 20 min)</li>
-        </ul>
-      </div>
-      <div class="plan">
-        <h3>Estándar</h3>
-        <div class="precio">$250.000 – $400.000</div>
-        <ul>
-          <li>Informe breve (6–8 págs)</li>
-          <li>3 mapas personalizados</li>
-          <li>Archivos digitales (GeoTIFF / QGIS)</li>
-        </ul>
-      </div>
-      <div class="plan">
-        <h3>Premium</h3>
-        <div class="precio">Desde $800.000</div>
-        <ul>
-          <li>Diagnóstico completo</li>
-          <li>Visitas a terreno</li>
-          <li>Dashboard interactivo</li>
-          <li>Apoyo para postulación a fondos</li>
-        </ul>
-      </div>
-    </div>
-    <p class="aclaracion-precios">Valores referenciales; sujetos a comuna, superficie y requerimientos.</p>
-  </div>
-</section>
+			<!-- Formulario de solicitud de análisis -->
+			<section id="solicita-analisis" class="wrapper style3">
+			  <div class="container">
+			    <header>
+			      <h2>Solicita tu análisis geoespacial</h2>
+			      <p>Cuéntanos tu comuna, tipo de predio o área, y qué necesitas analizar. Te responderemos a la brevedad.</p>
+			    </header>
+			    <form class="solicitud-form" action="mailto:geoterra.project@gmail.com" method="POST" enctype="text/plain">
+			      <div class="form-row">
+			        <input type="text" name="Nombre" placeholder="Nombre y apellido" required>
+			      </div>
+			      <div class="form-row">
+			        <input type="email" name="Email" placeholder="Correo electrónico" required>
+			      </div>
+			      <div class="form-row">
+			        <input type="text" name="Comuna" placeholder="Comuna o sector" required>
+			      </div>
+			      <div class="form-row">
+			        <textarea name="Necesidad" rows="3" placeholder="¿Qué necesitas analizar? Cuéntanos brevemente." required></textarea>
+			      </div>
+			      <div class="form-row">
+			        <button type="submit" class="button primary">Enviar solicitud</button>
+			      </div>
+			    </form>
+			  </div>
+			</section>
+
+			<!-- Planes y precios -->
+			<section class="wrapper style2" id="precios">
+			  <div class="container">
+			    <header class="major">
+			      <h2>Planes y precios</h2>
+			    </header>
+			    <div class="precios-table">
+			      <div class="plan">
+			        <h3>Básico</h3>
+			        <div class="precio">$80.000</div>
+			        <ul>
+			          <li>1 demo geoespacial</li>
+			          <li>1 imagen comparativa</li>
+			          <li>Asesoría inicial (llamada 20 min)</li>
+			        </ul>
+			      </div>
+			      <div class="plan">
+			        <h3>Estándar</h3>
+			        <div class="precio">$250.000 – $400.000</div>
+			        <ul>
+			          <li>Informe breve (6–8 págs)</li>
+			          <li>3 mapas personalizados</li>
+			          <li>Archivos digitales (GeoTIFF / QGIS)</li>
+			        </ul>
+			      </div>
+			      <div class="plan">
+			        <h3>Premium</h3>
+			        <div class="precio">Desde $800.000</div>
+			        <ul>
+			          <li>Diagnóstico completo</li>
+			          <li>Visitas a terreno</li>
+			          <li>Dashboard interactivo</li>
+			          <li>Apoyo para postulación a fondos</li>
+			        </ul>
+			      </div>
+			    </div>
+			    <p class="aclaracion-precios">Valores referenciales; sujetos a comuna, superficie y requerimientos.</p>
+			  </div>
+			</section>
+
 			<!-- Principios de trabajo -->
 			<section class="wrapper style1">
 				<div class="container">
@@ -250,6 +255,18 @@
 				</div>
 			</div>
 
+			<!-- Botones fijos de contacto (AHORA dentro del body) -->
+			<div class="fixed-contact-buttons">
+			  <a href="https://wa.me/56939058165?text=Hola%20Geoterra%2C%20quisiera%20agendar%20una%20reuni%C3%B3n%20de%2020%20min"
+				 class="fixed-btn whatsapp" target="_blank" aria-label="WhatsApp">
+			    <i class="fab fa-whatsapp"></i>
+			  </a>
+			  <a href="mailto:geoterra.project@gmail.com?subject=Consulta%20Geoterra"
+				 class="fixed-btn email" aria-label="Correo electrónico">
+			    <i class="fas fa-envelope"></i>
+			  </a>
+			</div>
+
 		</div>
 
 		<!-- Scripts -->
@@ -261,15 +278,4 @@
 		<script src="assets/js/main.js"></script>
 
 	</body>
-	<!-- Botones fijos de contacto -->
-<div class="fixed-contact-buttons">
-  <a href="https://wa.me/56939058165?text=Hola%20Geoterra%2C%20quisiera%20agendar%20una%20reuni%C3%B3n%20de%2020%20min"
-     class="fixed-btn whatsapp" target="_blank" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <a href="mailto:geoterra.project@gmail.com?subject=Consulta%20Geoterra"
-     class="fixed-btn email" aria-label="Correo electrónico">
-    <i class="fas fa-envelope"></i>
-  </a>
-</div>
 </html>
