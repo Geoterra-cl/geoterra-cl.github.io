@@ -4221,3 +4221,129 @@ input, select, textarea {
   justify-content: flex-start !important;
   text-align: left !important;
 }
+/* ===== Restaurar diseño de 2 paneles: header-top (claro) + header-nav-panel (oscuro) ===== */
+
+/* 1) Contenedor global del header: dejar en bloque (no flex) */
+#header {
+  display: block !important;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* 2) Panel superior (claro) que contiene logo */
+.header-top {
+  background: #f4f4f4; /* color claro similar al original; ajusta si tu original era distinto */
+  padding: 12px 3rem;
+  box-sizing: border-box;
+}
+
+/* Logo (alineado a la izquierda en el panel superior) */
+.header-top h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Asegura que el enlace del logo esté alineado a la izquierda */
+#logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  justify-content: flex-start;
+}
+
+/* Imagen del logo: tamaño controlado */
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Texto del logo: tamaño y estilo legible y acorde al original */
+.logo-text {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.15rem; /* tamaño mayor para que no quede enana */
+  font-weight: 700;
+  color: #003300; /* oscuro para fondo claro */
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* 3) Panel de navegación: barra oscura debajo del header-top */
+.header-nav-panel {
+  background: #222; /* color oscuro de la barra de navegación */
+  border-top: 4px solid #4fc3f7; /* línea azul tipo acento, opcional según tu diseño */
+  padding: 14px 0;
+  box-sizing: border-box;
+}
+
+/* Centrar el contenido del nav y limitar ancho del listado (igual que antes) */
+#nav {
+  max-width: 1100px; /* ajusta al ancho de tu layout */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Estilos del menú */
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+  justify-content: center; /* centra los items horizontalmente en la barra */
+  align-items: center;
+}
+
+#nav ul li {
+  display: inline-block;
+}
+
+#nav ul li a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 0;
+}
+
+/* Estilo del item actual (Inicio) */
+#nav ul li.current a,
+#nav ul li a:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* 4) Responsive: en móvil reducimos logo y espaciados */
+@media (max-width: 768px) {
+  .header-top {
+    padding: 10px 1rem;
+  }
+  .header-nav-panel {
+    padding: 10px 0;
+  }
+  .logo-img {
+    height: 32px;
+  }
+  .logo-text {
+    font-size: 1rem;
+  }
+  #nav ul {
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* 5) Revertir reglas conflictivas añadidas antes (emergency overrides) */
+#header, #header * {
+  text-align: left !important;
+  justify-content: flex-start !important;
+  transform: none !important;
+  text-indent: 0 !important;
+  clip: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
