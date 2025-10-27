@@ -3849,3 +3849,43 @@ input, select, textarea {
 }
 
 /* Si quieres que el logo quede literalmente pegado al borde: left: 0; top: 0; */
+/* --- Mejoras visuales Geoterra --- */
+
+/* 1. Texto blanco en formulario */
+#solicita-analisis header p {
+  color: #ffffff;
+}
+
+/* 2. Contacto en blanco y hover verde */
+#contacto header p, 
+#contacto header a {
+  color: #ffffff;
+}
+
+#contacto header a:hover {
+  color: #9ef39e;
+}
+
+/* 3. Logo y texto Geoterra responsivo */
+.logo-img {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    font-size: 1.2em;
+  }
+  .logo-img {
+    height: 32px;
+  }
+}
+
