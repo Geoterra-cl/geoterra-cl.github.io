@@ -4089,3 +4089,63 @@ input, select, textarea {
   clip: auto !important;
   position: relative !important;
 }
+/* ===== Reparación rápida: forzar visibilidad y alineación del logo/texto ===== */
+#header { position: relative; z-index: 9999; }
+
+/* Asegura que el enlace #logo use flex y el texto no haga saltos de línea */
+#logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Imagen del logo */
+#logo .logo-img,
+#logo img.logo-img {
+  display: inline-block !important;
+  height: 40px !important;
+  width: auto !important;
+  vertical-align: middle !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Texto del logo (si está envuelto en span.logo-text) o fallback al texto del enlace */
+#logo .logo-text,
+#logo { /* el segundo selector cubre el caso donde no hay span */
+  color: #003300 !important; /* color oscuro legible sobre fondos claros */
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  text-indent: 0 !important;
+  clip: auto !important;
+  overflow: visible !important;
+  visibility: visible !important;
+}
+
+/* Ajustes en móvil */
+@media (max-width: 768px) {
+  #logo .logo-img, #logo img.logo-img {
+    height: 32px !important;
+  }
+  #logo .logo-text,
+  #logo {
+    font-size: 1.05rem !important;
+  }
+}
+
+/* Protección extra: elimina transform/clip/text-indent que pudieran ocultar el texto */
+#logo, #logo * {
+  transform: none !important;
+  text-indent: 0 !important;
+  clip: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
