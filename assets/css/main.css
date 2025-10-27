@@ -4042,3 +4042,50 @@ input, select, textarea {
 #contacto .button:focus-visible {
   box-shadow: 0 0 0 4px rgba(158,243,158,0.25);
 }
+/* ===== Forzar visibilidad del texto del logo ===== */
+#header { position: relative; z-index: 1000; }
+
+#logo {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* Asegura que la imagen del logo se vea y no empuje el texto fuera */
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Forzar visibilidad del texto del logo */
+#logo .logo-text,
+#logo > span,
+#logo { /* último recurso, cubre distintos HTML posibles */
+  color: #ffffff !important;      /* color por defecto: blanco (útil si header/hero es oscuro) */
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: inline-block !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-decoration: none !important;
+}
+
+/* Ajustes móviles */
+@media (max-width: 768px) {
+  .logo-img { height: 32px; }
+  #logo .logo-text,
+  #logo > span,
+  #logo { font-size: 1.05rem !important; }
+}
+
+/* Regla de emergencia si hay transform/translate que saque el logo fuera */
+#logo, #logo .logo-text, #logo .logo-img {
+  transform: none !important;
+  text-indent: 0 !important;
+  clip: auto !important;
+  position: relative !important;
+}
