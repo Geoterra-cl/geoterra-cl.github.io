@@ -3816,3 +3816,42 @@ input, select, textarea {
   #banner h2 { font-size: 1.15em; }
   #banner p { font-size: 0.98em; }
 }
+/* ===== Logo izquierdo y header: Geoterra solamente ===== */
+
+/* Asegura que el header pueda posicionar el logo en absoluto */
+#header {
+  position: relative; /* ya existe en tu CSS, pero se reafirma */
+  text-align: center; /* mantiene el título centrado */
+}
+
+/* Imagen del logo pegada al margen izquierdo */
+.logo-img {
+  position: absolute;
+  left: 12px;                 /* separación desde el borde izquierdo */
+  top: 18px;                  /* ajusta según padding del header */
+  height: 48px;               /* altura del logo: ajusta si es necesario */
+  width: auto;
+  display: block;
+}
+
+/* Si el logo es muy grande, reduce en pantallas pequeñas */
+@media (max-width: 900px) {
+  .logo-img {
+    left: 10px;
+    top: 12px;
+    height: 40px;
+  }
+}
+
+/* Opcional: texto adicional visible solo para SEO/lectores de pantalla */
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: 0; padding: 0; margin: -1px;
+}
+
+/* Limpieza: si accidentalmente quedó un <em> en #logo, ocultarlo */
+#logo em { display: none; }
